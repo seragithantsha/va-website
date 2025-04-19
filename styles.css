@@ -3,7 +3,7 @@
 	--green: #00d084;
 	--gradient: linear-gradient(to right, var(--blue), var(--green));
 	--text-color: #333;
-	--background-color: #f9f9f9;
+	--background-color: #e9e9e9;
 	--card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	--card-radius: 15px;
 }
@@ -13,8 +13,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
-html,
+.contact html,
 body {
 	margin: 0;
 	padding: 0;
@@ -499,7 +498,6 @@ footer a:hover {
 	width: 100%;
 	height: 150px;
 	object-fit: cover;
-	border-bottom: 2px solid var(--blue);
 }
 
 .artist-tile h3 {
@@ -696,6 +694,13 @@ header {
 .hero p {
 	font-size: 1rem;
 }
+.map-placeholder {
+	height: 150px; /* Reduce map height */
+	width: 100%; /* Ensure map takes full width */
+	border-radius: 10px;
+	contain: content;
+	z-index: 1;
+}
 
 /* Media Queries for Small Devices */
 @media screen and (max-width: 768px) {
@@ -753,6 +758,13 @@ header {
 
 	.map-placeholder {
 		height: 150px; /* Reduce map height */
+		width: 100%; /* Ensure map takes full width */
+		border-radius: 10px;
+		contain: content;
+		z-index: 1;
+	}
+	iframe {
+		position: relative;
 	}
 
 	/* Responsive Footer */
